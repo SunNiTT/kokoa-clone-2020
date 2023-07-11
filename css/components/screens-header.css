@@ -1,0 +1,44 @@
+.screen-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 15px;
+}
+
+.screen-header__title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0px -26px;
+}
+
+.screen-header__icons {
+    margin: 0px -43px;
+}
+.screen-header__icons span {
+    margin-left: 25px;
+}
+
+.screen-header__icons-cog-point {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: tomato;
+    border-radius: 50%;
+    right: 2px;
+    top: 45px;
+}
+
+@keyframes cogAnimation {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: rotateZ(360deg);
+         }
+}
+
+.screen-header__icons .fa-cog:hover{
+    animation:cogAnimation 3s ease-in-out infinite;
+}
+
